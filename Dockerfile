@@ -35,4 +35,4 @@ RUN pnpm build
 
 EXPOSE 3000
 
-CMD [ "pnpm", "start" ]
+CMD ["/bin/sh", "-c", "rm -f /root/.flowise/database.sqlite && pnpm start"]
